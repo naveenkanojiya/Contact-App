@@ -13,5 +13,7 @@ data class Contact (
 
     var email : String,
 
-    var dob: Date
+    var dob: Date,
+
+    var surname : String,
 )
