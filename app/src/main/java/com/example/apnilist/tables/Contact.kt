@@ -15,5 +15,5 @@ data class Contact (
 
     var dob: Date,
 
-    var surname : String,
+
 )
