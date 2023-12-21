@@ -13,16 +13,15 @@ import com.example.apnilist.tables.Contact
 interface Dao {
 
     @Query("SELECT * FROM contact_table")
-    fun readData()
-
+    fun readData():List<Contact>
     @Insert(entity = Contact::class, onConflict = OnConflictStrategy.IGNORE)
-    fun insertData()
+    fun insertData(contact: Contact)
 
 
     @Update
-    fun updateData()
+    fun updateData(contact: Contact)
 
     @Delete
-    fun deleteData()
+    fun deleteData(contact: Contact)
 
 }

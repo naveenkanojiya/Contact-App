@@ -1,11 +1,13 @@
 package com.example.apnilist.tables
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.util.Date
 
 @Entity(tableName = "contact_table")
 data class Contact (
-    var id:Int,
+
+   @PrimaryKey var id:Int,
 
     var name:String,
 
@@ -13,9 +15,7 @@ data class Contact (
 
     var email : String,
 
-    var dob: Date,
-
-    var surename: String
+//    var dob: Date,
 
 
 )
