@@ -7,7 +7,7 @@ import java.util.Date
 @Entity(tableName = "contact_table")
 data class Contact (
 
-   @PrimaryKey var id:Int,
+   @PrimaryKey(autoGenerate = true) var id:Int? = null,
 
     var name:String,
 

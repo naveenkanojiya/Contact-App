@@ -10,7 +10,7 @@ object CreateDb {
         if (db==null){
             db= Room.databaseBuilder(context,
                 MainDb::class.java,
-                "my_database.db").build()
+                "my_database.db").allowMainThreadQueries().build()
         }
         return db!!
     }
