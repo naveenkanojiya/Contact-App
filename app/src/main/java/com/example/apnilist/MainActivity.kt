@@ -7,6 +7,7 @@ import com.example.apnilist.tables.Contact
 class MainActivity : AppCompatActivity() {
 
     var name : String = "My NAme is Naveen KAnojiya"
+    var name2 : String = "My NAme is Naveen KAnojiya2"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
