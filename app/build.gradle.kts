@@ -8,6 +8,10 @@ android {
     namespace = "com.example.apnilist"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.apnilist"
         minSdk = 26

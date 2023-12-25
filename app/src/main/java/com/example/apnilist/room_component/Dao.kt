@@ -1,4 +1,4 @@
-package com.example.apnilist
+package com.example.apnilist.room_component
 
 import androidx.room.Dao
 import androidx.room.Delete
