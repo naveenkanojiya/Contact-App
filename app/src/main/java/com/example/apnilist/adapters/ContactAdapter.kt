@@ -3,6 +3,7 @@ package com.example.apnilist.adapters
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -18,11 +19,11 @@ class ContactAdapter(var context: Context, var function:(postion : Int)-> Unit )
         private val CALLBACK:DiffUtil.ItemCallback<Contact> =
             object : DiffUtil.ItemCallback<Contact>(){
                 override fun areItemsTheSame(oldItem: Contact, newItem: Contact): Boolean {
-                    return false
+                    return oldItem.id==newItem.id
                 }
 
                 override fun areContentsTheSame(oldItem: Contact, newItem: Contact): Boolean {
-                    return false
+                    return newItem.id==oldItem.id && newItem.name==oldItem.name && newItem.email==oldItem.email && newItem.number==oldItem.number
                 }
             }
 
@@ -35,6 +36,15 @@ class ContactAdapter(var context: Context, var function:(postion : Int)-> Unit )
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.binding.name.text=getItem(position).name
+        holder.binding.number.text=getItem(position).id.toString()
+
+
+        holder.itemView.setOnClickListener {
+            function(position)
+            Toast.makeText(context,currentList.size.toString(),Toast.LENGTH_SHORT).show()
+        }
+
 
     }
 
