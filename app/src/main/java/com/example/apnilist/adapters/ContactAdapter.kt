@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.apnilist.databinding.ContactItemBinding
 import com.example.apnilist.tables.Contact
 
-class ContactAdapter(var context: Context, ) : ListAdapter<Contact,ContactAdapter.ViewHolder>(
+class ContactAdapter(var context: Context, var function:(postion : Int)-> Unit ) : ListAdapter<Contact,ContactAdapter.ViewHolder>(
     CALLBACK){
 
     inner class ViewHolder(var binding :ContactItemBinding):RecyclerView.ViewHolder(binding.root)
