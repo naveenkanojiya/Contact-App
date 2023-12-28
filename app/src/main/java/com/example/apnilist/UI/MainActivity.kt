@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         dataList.add(Contact(11,"Naveen ","8424829482","bsdf@gami.com"))
         dataList.add(Contact(12,"Naveen ","8424829482","bsdf@gami.com"))
         dataList.add(Contact(13,"Naveen ","8424829482","bsdf@gami.com"))
-        dataList.add(Contact(13,"Naveen ","8424829482","bsdf@gami.com"))
         adapter.submitList(dataList)
         binding.contactRv.adapter=adapter
 
