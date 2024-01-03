@@ -16,11 +16,8 @@ interface Dao {
     fun readData():List<Contact>
     @Insert(entity = Contact::class, onConflict = OnConflictStrategy.IGNORE)
     fun insertData(contact: Contact)
-
-
     @Update
     fun updateData(contact: Contact)
-
     @Delete
     fun deleteData(contact: Contact)
 

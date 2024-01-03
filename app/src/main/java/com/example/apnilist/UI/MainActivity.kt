@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
-    var dataList = ArrayList<Contact>()
     lateinit var adapter: ContactAdapter
+    var dataList = ArrayList<Contact>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         binding.contactRv.layoutManager = LinearLayoutManager(this,)
         adapter = ContactAdapter(this){
             dataList.removeAt(it)
-            adapter.submitList(dataList)
+//            adapter.submitList(dataList)
 
         }
         dataList.add(Contact(2,"Naveen ","8424829482","bsdf@gami.com"))

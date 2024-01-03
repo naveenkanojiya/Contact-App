@@ -58,4 +58,6 @@ dependencies {
     implementation("androidx.room:room-ktx:2.5.2")
     ksp("androidx.room:room-compiler:2.5.2")
 
+    implementation("com.hbb20:ccp:2.7.3")
+
 }
