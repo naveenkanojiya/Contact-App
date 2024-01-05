@@ -15,5 +15,9 @@ class AddUpdateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.addBtn.setOnClickListener {
+
+        }
+
     }
 }
