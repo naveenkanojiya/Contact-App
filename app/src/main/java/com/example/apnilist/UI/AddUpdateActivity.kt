@@ -14,6 +14,7 @@ class AddUpdateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        setContentView(binding.root)
 
         binding.addBtn.setOnClickListener {
 
