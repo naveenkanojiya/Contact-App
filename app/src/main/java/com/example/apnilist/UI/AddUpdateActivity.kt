@@ -18,9 +18,6 @@ class AddUpdateActivity : AppCompatActivity() {
         binding.addBtn.setOnClickListener {
 
         }
-binding.addBtn.setOnClickListener {
-
-        }
 
 
     }
